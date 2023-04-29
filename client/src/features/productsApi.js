@@ -1,9 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import production from "../config"
 
+const url = production.baseUrl
+
 export const productsApi = createApi({
     reducerPath: "productsApi",
-    baseQuery: fetchBaseQuery({ baseUrl: `${production.baseUrl}/api/data` }),
+    baseQuery: fetchBaseQuery({ baseUrl: `${url}/api/data` }),
     endpoints: (builder) => ({
         getAllProducts: builder.query({
             query: () => "products/AllProducts"
