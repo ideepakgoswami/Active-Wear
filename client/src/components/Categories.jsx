@@ -42,7 +42,7 @@ const Categories = () => {
                 image={image}
                 title={title}
                 description={description}
-                onClick={() => handleCategoryClick(category)}
+                onclick={() => handleCategoryClick(category)}
               />
             )
           })}
