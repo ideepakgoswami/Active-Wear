@@ -13,7 +13,9 @@ dotenv.config();
 const app = express();
 
 // Configure middleware
-app.use(cors());
+app.use(cors({
+    origin: 'http://3.110.190.72'
+}));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../../client/build')));
 

@@ -3,7 +3,7 @@ import React from 'react'
 const CategoryCard = ({ image, title, description, index, category, onClick }) => {
 
     return (
-        <div onClick={onClick} className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+        <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={image} alt={`Category ${index}`} />
             </div>
