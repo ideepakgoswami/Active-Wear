@@ -3,7 +3,9 @@ import logo from "../assets/images/Logo.png";
 import Navbar from '../components/Navbar.jsx'
 import { Link } from "react-router-dom";
 
+
 const Header = () => {
+
   return (
     <>
       <header className="bg-navy text-lgray body-font">

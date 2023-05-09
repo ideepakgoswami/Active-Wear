@@ -27,7 +27,7 @@ const SignIn = () => {
         .then(response => {
           alert(response.data.message);
           action.resetForm();
-          navigate("/home")
+          navigate("/products/AllProducts")
         })
         .catch(error => {
           console.log(error.response.data);

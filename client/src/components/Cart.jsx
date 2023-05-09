@@ -113,7 +113,7 @@ const Cart = () => {
                                                 ) : (
                                                     "+150"
                                                 )
-                                            }₹</span>
+                                            } ₹</span>
                                         </div>
                                     </div>
                                     <div className="border-t border-gray-600 mt-5 mb-2 ">

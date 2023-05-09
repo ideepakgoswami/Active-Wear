@@ -7,6 +7,7 @@ import { useGetAllProductsQuery, useGetAthleisureQuery, useGetEquipmentQuery, us
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const App = () => {
 
   const { data: allProducts } = useGetAllProductsQuery()

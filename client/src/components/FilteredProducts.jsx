@@ -22,8 +22,6 @@ const FilteredProducts = ({ AllProducts, Athleisure, Equipment, Lifestyle }) => 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
                 {/* <!-- Product cards here --> */}
 
-
-
                 {AllProducts?.map((item, index) => (
                     <ProductCard
                         key={item._id}

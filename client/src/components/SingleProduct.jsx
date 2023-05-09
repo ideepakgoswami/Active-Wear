@@ -2,13 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const SingleProduct = ({ AllProducts }) => {
+
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    const selectedProduct = AllProducts.find((p) => p._id === id);
-    setProduct(selectedProduct);
+    if (AllProducts) {
+      const selectedProduct = AllProducts.find((p) => p._id === id);
+      setProduct(selectedProduct);
+    }
   }, [AllProducts, id]);
+
 
   return (
     <>
@@ -126,7 +130,7 @@ const SingleProduct = ({ AllProducts }) => {
               <div className=" pb-5 border-b-2 border-gray-100 mb-5"></div>
               <div className="flex">
                 <span className="title-font font-medium text-2xl text-gray-900">
-                  {product?.price ?? "Dummy"}
+                  {`${product?.price} ₹` ?? "Dummy"}
                 </span>
                 <button className="flex ml-auto text-lgray bg-navy border-0 py-2 px-6 focus:outline-none hover:bg-test hover:text-dgray rounded">
                   Buy Now
